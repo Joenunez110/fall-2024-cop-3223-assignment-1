@@ -104,29 +104,32 @@ double calculateHeight(___){
 
 //This function will gather all required data for the calculations
 int askUserForInput(___){
-    int choice = 0;
-    printf("What would you like to do?\n1. Calculate distance\n2. Calculate perimeter\n3. Calculate area\n4. Calculate Width\n5. Caluclate height\n");
+    int choice = 0; //Initializes the users choice to zero
+    printf("What would you like to do?\n1. Calculate distance\n2. Calculate perimeter\n3. Calculate area\n4. Calculate Width\n5. Caluclate height\n"); //Gathers what calculation the user would like
     scanf("%d", &choice);
-    while (choice > 5 || choice < 1){
+    while (choice > 5 || choice < 0){ //Ensures user stays within perameters
         printf("\nInvalid input. Please try again.\n\n");
         printf("What would you like to do?\n1. Calculate distance\n2. Calculate perimeter\n3. Calculate area\n4. Calculate Width\n5. Caluclate height\n");
         scanf("%d", &choice);
     }
     switch (choice){
         case 1:
-            calculateDistance(choice);
+            calculateDistance(choice); //calls the functions for distance
             break;
         case 2:
-            calculatePerimeter(choice);
+            calculatePerimeter(choice); //calls the function for perimeter
             break;
         case 3:
-            calculateArea(choice);
+            calculateArea(choice); //calls function to for area
             break;
         case 4:
-            calculateWidth(choice);
+            calculateWidth(choice); //calls function for width
             break;
         case 5:
-            calculateHeight(choice);
+            calculateHeight(choice); //calls function for height
+            break;
+        case 0:
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n"); //allows user to exit program
             break;
     }
     return 0;
