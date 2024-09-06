@@ -17,14 +17,14 @@
 double calculateDistance(___){
     double x1, x2, y1, y2;
 
-    printf("Please Enter the first point as an ordered pair i.e 3,2: ");
+    printf("Please Enter the first point as an ordered pair i.e 3,2: "); //Gathers first point 
     scanf("%lf,%lf", &x1, &y1);
 
-    printf("Please enter the second point as an ordered pair i.e 3,2: ");
+    printf("Please enter the second point as an ordered pair i.e 3,2: "); //Gathers second point
     scanf("%lf,%lf", &x2,&y2);
 
-    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    printf("The distance between these two points is: %.2lf", distance);
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); //Calculates the distance between the two points
+    printf("The distance between these two points is: %.2lf", distance); //Prints out the distance between the two points
     return 0;
     
 }
@@ -32,19 +32,19 @@ double calculateDistance(___){
 //Will calculate the perimeter of a circle
 double calculatePerimeter(___){
     double x1, x2, y1, y2;
-    double perimeter = 0;
+    double perimeter = 0; //Initalizes what we are looking for
 
-    printf("Please Enter the center point as an ordered pair i.e 3,2: ");
+    printf("Please Enter the center point as an ordered pair i.e 3,2: ");//Gathers Center point
     scanf("%lf,%lf", &x1, &y1);
 
-    printf("Please enter the second point as an ordered pair i.e 3,2: ");
+    printf("Please enter the second point as an ordered pair i.e 3,2: ");//Gathers second point
     scanf("%lf,%lf", &x2,&y2);
 
-    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    double radius = distance;
-    perimeter = 2 * pi * radius;
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); //Calculate the radius
+    double radius = distance; //Reassigns the distance into a radius variable
+    perimeter = 2 * pi * radius; //Calculates the perimeter/circumfrence
    
-    printf("The perimeter/circumfrence of your circle is: %.2lf", perimeter);
+    printf("The perimeter/circumfrence of your circle is: %.2lf", perimeter); //prints out the perimeter/circumfrence
 
     return 0;
 }
@@ -59,9 +59,9 @@ double calculateArea(___){
     printf("Please enter the second point as an ordered pair i.e 3,2: ");
     scanf("%lf,%lf", &x2,&y2);
 
-    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    double radius = distance;
-    double area = pi * pow(radius, 2);
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); //Calculate the radius
+    double radius = distance; //Reassigns the distance into a radius variable
+    double area = pi * pow(radius, 2); //Calculate the area
 
     printf("\nThe area of your circle is: %.2lf", area);
 
@@ -78,9 +78,9 @@ double calculateWidth(___){
     printf("Please enter the second point as an ordered pair i.e 3,2: ");
     scanf("%lf,%lf", &x2,&y2);
 
-    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    double radius = distance;
-    radius = radius * 2;
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));//Calculate the radius
+    double radius = distance; //Reassigns the distance into a radius variable
+    radius = radius * 2; //Calculates the Width
     printf("The width of your circle is: %.2lf", radius);
     return 0;
 }
@@ -95,9 +95,9 @@ double calculateHeight(___){
     printf("Please enter the second point as an ordered pair i.e 3,2: ");
     scanf("%lf,%lf", &x2,&y2);
 
-    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    double radius = distance;
-    radius = radius * 2;
+    double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));//Calculate the radius
+    double radius = distance; //Reassigns the distance into a radius variable
+    radius = radius * 2; //Calculates the height
     printf("The height of your circle is: %.2lf", radius);
     return 0;
 }
