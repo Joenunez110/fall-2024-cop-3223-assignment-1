@@ -25,6 +25,24 @@ double calculateDistance(___){
 
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); //Calculates the distance between the two points
     printf("The distance between these two points is: %.2lf", distance); //Prints out the distance between the two points
+
+    char anotherCalculation;
+    printf("Would you like to find another calculation? y/n: "); //allows user to do another calculation without restarting the program manually
+    scanf(" %c", &anotherCalculation);
+    switch(anotherCalculation){
+        case 'y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'Y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'n':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+        case 'N':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+    }
     return 0;
     
 }
@@ -46,6 +64,24 @@ double calculatePerimeter(___){
    
     printf("The perimeter/circumfrence of your circle is: %.2lf", perimeter); //prints out the perimeter/circumfrence
 
+    char anotherCalculation;
+    printf("Would you like to find another calculation? y/n: ");
+    scanf(" %c", &anotherCalculation);
+    switch(anotherCalculation){
+        case 'y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'Y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'n':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+        case 'N':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+    }
+
     return 0;
 }
 
@@ -65,6 +101,24 @@ double calculateArea(___){
 
     printf("\nThe area of your circle is: %.2lf", area);
 
+    char anotherCalculation;
+    printf("Would you like to find another calculation? y/n: ");
+    scanf(" %c", &anotherCalculation);
+    switch(anotherCalculation){
+        case 'y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'Y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'n':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+        case 'N':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+    }
+
     return 0;
 }
 
@@ -82,6 +136,25 @@ double calculateWidth(___){
     double radius = distance; //Reassigns the distance into a radius variable
     radius = radius * 2; //Calculates the Width
     printf("The width of your circle is: %.2lf", radius);
+
+    char anotherCalculation;
+    printf("Would you like to find another calculation? y/n: ");
+    scanf(" %c", &anotherCalculation);
+    switch(anotherCalculation){
+        case 'y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'Y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'n':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+        case 'N':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+    }
+
     return 0;
 }
 
@@ -99,6 +172,25 @@ double calculateHeight(___){
     double radius = distance; //Reassigns the distance into a radius variable
     radius = radius * 2; //Calculates the height
     printf("The height of your circle is: %.2lf", radius);
+
+    char anotherCalculation;
+    printf("Would you like to find another calculation? y/n: ");
+    scanf(" %c", &anotherCalculation);
+    switch(anotherCalculation){
+        case 'y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'Y':
+            askUserForInput(anotherCalculation);
+            break;
+        case 'n':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+        case 'N':
+            printf("Exiting program...\n\nProgram terminated\n\nThank you and have a nice day.\n\n");
+            break;
+    }
+    
     return 0;
 }
 
